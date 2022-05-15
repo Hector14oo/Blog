@@ -1,0 +1,30 @@
+.header-container{
+    margin: 2rem 4rem;
+}
+.header-container img{
+    width: 26rem;
+}
+.header-profile-button a{
+    font-size: 2rem;
+}
+
+.main-title{
+    margin-bottom: 6rem;
+
+    font-size: 5.2rem;
+
+    color: white;
+}
+.main-enter-button{
+    font-size: 2.8rem;
+}
+
+span.flaticon-001-facebook:before {
+    font-size: 4rem;
+}
+span.flaticon-010-linkedin:before {
+    font-size: 4rem;
+}
+span.flaticon-011-instagram:before {
+    font-size: 4rem;
+}
