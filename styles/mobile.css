@@ -17,13 +17,12 @@ span{
 body{
     width: 100%;
     height: 100vh;
+    position: relative;
     display: grid;
-    grid-template-rows: 1.2fr 10fr 1.2fr;
-
-    background-image: url(/assets/img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    grid-template-rows: 6rem auto 7rem;
+}
+.all-page{
+    background-color: #ffffff;
 }
 .blur{
     width: 100%;
@@ -61,7 +60,7 @@ header{
 
     background-color: white;
     color: black;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     transition-duration: 0.1s;
 }
 .header-profile-button a:hover{
@@ -72,7 +71,14 @@ header{
     cursor: pointer;
 }
 
-.main-container{
+.blog-header-container{
+    justify-content: flex-end;
+}
+.blog-profile-button a{
+    font-size: 1rem;
+}
+
+.home-main-container{
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -81,14 +87,14 @@ header{
 
     text-align: center;
 }
-.main-title{
+.home-main-title{
     margin-bottom: 6rem;
 
     font-size: 3rem;
 
     color: white;
 }
-.main-enter-button{
+.home-main-enter-button{
     padding: 1rem 2rem;
     
     font-size: 2.5rem;
@@ -98,25 +104,170 @@ header{
     border-radius: 0.4rem;
     transition-duration: 0.1s;
 }
-.main-enter-button:hover{
+.home-main-enter-button:hover{
     background-color: transparent;
     
     color: white;
     border: 1px solid white;
 }
 
+.blog-main-new-post{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto auto;
+}
+.new-post-img-container{
+    width: 100%;
+    height: 16rem;
+}
+.new-post-img-container img{
+    width: 100%;
+    height: 30rem;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 0 0 10% 0;
+    object-fit: cover;
+}
+.blog-main-new-post h2{
+    margin-bottom: 0.5rem;
+
+    font-size: 3rem;
+    color: white;
+}
+.blog-main-new-post h3{
+    margin-left: 2rem;
+
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.blog-main-description-container p{
+    margin-top: 5rem;
+
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+.blog-main-description-container a{
+    display: inline-block;
+    margin: 2rem 0 4rem 0;
+    padding: 1rem 2rem;
+    
+    font-size: 1.5rem;
+
+    background-color: #7548cf;
+    color: white;
+    border-radius: 0.4rem;
+    transition-duration: 0.1s;
+}
+.blog-main-description-container a:hover{
+    background-color: transparent;
+    
+    color: #7548cf;
+    border: 1px solid #7548cf;
+}
+
+.blog-main-blogposts{
+    margin-bottom: 2rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+}
+.posts-img-container{
+    width: 100%;
+    height: 35rem;
+    padding: 0 0.8rem;
+    position: relative;
+}
+.posts-img-container img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10%;
+    object-fit: cover;
+}
+.blog-main-blogposts h2{
+    position: absolute;
+    bottom: 4rem;
+    left: 3.4rem;
+
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.blog-main-blogposts h3{
+    position: absolute;
+    bottom: 2.2rem;
+    left: 5rem;
+
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.blog-main-blogposts p{
+    margin: 2rem 0 0 2rem;
+
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+.blog-main-blogposts a{
+    display: inline-block;
+    margin: 2rem 0 0 2rem;
+    padding: 1rem 2rem;
+    
+    font-size: 1.5rem;
+
+    background-color: #7548cf;
+    color: rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    transition-duration: 0.1s;
+}
+.blog-main-blogposts a:hover{
+    background-color: transparent;
+    
+    color: #7548cf;
+    border: 1px solid #7548cf;
+}
+
 .footer-container{
-    align-self: center;
+    height: 100%;
 }
 .footer-container div{
-    width: 100%;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer-container div a{
     margin: 0 2rem;
 
     color: white;
 }
+
+.footer-blog-style{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(117, 72, 207);
+    border-top: 2rem solid rgb(97, 61, 170);
+}
+.footer-blog-style div{
+    height: 100%;
+}
+.footer-blog-style div p{
+    margin-left: 1rem;
+    color: white;
+}
+.footer-blog-style div a{
+    margin: 0 2rem 0 0;
+}
+.footer-blog-style div a span{
+    font-size: 0.1rem;
+}
+
 span.flaticon-001-facebook:before {
     margin: 0;
 }

@@ -1,16 +1,50 @@
-.main-title{
+.home-main-title{
     font-size: 6rem;
 }
-.main-enter-button{
+.home-main-enter-button{
     font-size: 3rem;
 }
 
-span.flaticon-001-facebook:before {
+.blog-main-new-post {
+    margin: 36rem 0 0 4rem;
+}
+.new-post-img-container{
+    width: 100%;
+    height: 7rem;
+}
+.new-post-img-container img{
+    height: 60rem;
+    border-radius: 0 0 10rem 0;
+}
+.blog-main-new-post h2{
     font-size: 5rem;
 }
-span.flaticon-010-linkedin:before {
-    font-size: 5rem;
+.blog-main-new-post h3{
+    font-size: 1.5rem;
 }
-span.flaticon-011-instagram:before {
-    font-size: 5rem;
+.blog-main-description-container p{
+    font-size: 2.5rem;
+}
+.blog-main-description-container a{
+    font-size: 2.5rem;
+}
+
+.blog-main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: auto;
+}
+
+.footer-blog-style div p{
+    font-size: 1.5rem;
+}
+
+.footer-blog-style span.flaticon-001-facebook:before {
+    font-size: 3.5rem;
+}
+.footer-blog-style span.flaticon-010-linkedin:before {
+    font-size: 3.5rem;
+}
+.footer-blog-style span.flaticon-011-instagram:before {
+    font-size: 3.5rem;
 }

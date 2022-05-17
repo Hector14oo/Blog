@@ -8,15 +8,53 @@
     font-size: 2rem;
 }
 
-.main-title{
+.home-main-title{
     margin-bottom: 6rem;
 
     font-size: 5.2rem;
 
     color: white;
 }
-.main-enter-button{
+.home-main-enter-button{
     font-size: 2.8rem;
+}
+
+.new-post-img-container{
+    width: 100%;
+    height: 15rem;
+}
+.new-post-img-container img{
+    border-radius: 0 0 10rem 0;
+}
+.blog-main-new-post h2{
+    font-size: 4rem;
+}
+.blog-main-new-post h3{
+    font-size: 1.4rem;
+}
+.blog-main-description-container p{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.blog-main-description-container a{
+    font-size: 2rem;
+}
+
+.blog-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+}
+.blog-main-blogposts{
+    justify-content: center;
+    grid-template-columns: 95%;
+    grid-template-rows: 40rem auto;
+}
+.posts-img-container{
+    height: 100%;
+}
+.blog-main-blogposts p{
+    font-weight: 400;
 }
 
 span.flaticon-001-facebook:before {
@@ -28,3 +66,17 @@ span.flaticon-010-linkedin:before {
 span.flaticon-011-instagram:before {
     font-size: 4rem;
 }
+
+.footer-blog-style div p{
+    font-size: 1.2rem;
+}
+.Blog-footer-icons span.flaticon-001-facebook:before {
+    font-size: 3.5rem;
+}
+.Blog-footer-icons span.flaticon-010-linkedin:before {
+    font-size: 3.5rem;
+}
+.Blog-footer-icons span.flaticon-011-instagram:before {
+    font-size: 3.5rem;
+}
+
